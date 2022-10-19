@@ -16,7 +16,7 @@ public class CalculateService {
         return (salary / 21.0) * days;
     }
 
-    public int countHoliday(LocalDate localDateStart, LocalDate localDateEnd) {
+    protected int countHoliday(LocalDate localDateStart, LocalDate localDateEnd) {
         int countHoliday = 0;
 
         for (LocalDate i = localDateStart; i.isBefore(localDateEnd); i = i.plusDays(1)) {
